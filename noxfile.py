@@ -30,6 +30,12 @@ def run_pytests_derivative_tests(session):
     session.run(*command.split(), external=True)
 
 @nox.session(python=PYTHON_INTERP_VERSION)
+def run_pytests_command_line_tests(session):
+    command = 'pytest -vs {} -c {} -m test_command_line_interfaces'.format(PATH_TO_PROJECT, path.join(PATH_TO_PROJECT, 'configs/pytest.ini'))
+    session.install('-r', path.join(PATH_TO_PROJECT, 'requirements.txt'))
+    session.run(*command.split(), external=True)
+
+@nox.session(python=PYTHON_INTERP_VERSION)
 def compute_cyclomatic_complexity(session):
     command = 'radon cc {}'.format(PATH_TO_PROJECT)
     session.install('-r', path.join(PATH_TO_PROJECT, 'requirements.txt'))
