@@ -5,8 +5,8 @@ import nox
 PATH_TO_PROJECT = path.dirname(__file__)
 PYTHON_INTERP_VERSION = '3.6.10'
 
-nox.options.envdir = path.join(gettempdir(), '.nox_workflow_template')
-nox.options.report = path.join(nox.options.envdir, 'nox_report_workflow_template')
+nox.options.envdir = path.join(gettempdir(), 'nox_workflow_template')
+nox.options.report = path.join(nox.options.envdir, 'noxreport')
 
 @nox.session(python=PYTHON_INTERP_VERSION)
 def lint(session):
