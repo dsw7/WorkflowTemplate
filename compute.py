@@ -4,23 +4,19 @@ from click import (
     option,
     argument,
     echo,
-    pass_context,
-    pass_obj,
     Choice
 )
 from utils.integrals import SimpleIntegral
 from utils.derivatives import SimpleDerivative
 
 @group()
-@pass_context
-def main(context):
-    context.obj = 100
+def main():
+    pass
 
 @main.command(help="Compute f'(x) for a simple polynomial f(x)")
 @argument('x', type=float)
 @option('--degree', type=Choice(['1', '2', '3', '4', '5']), default='1')
-@pass_obj
-def compute_derivative(obj, x, degree):
+def compute_derivative(x, degree):
     obj_deriv = SimpleDerivative(x)
     if degree == '1':
         echo(obj_deriv.get_first_derivative())
@@ -36,8 +32,7 @@ def compute_derivative(obj, x, degree):
 @main.command(help='Compute F(x) for a simple polynomial f(x)')
 @argument('x', type=float)
 @option('--degree', type=Choice(['1', '2', '3', '4', '5']), default='1')
-@pass_obj
-def compute_integral(obj, x, degree):
+def compute_integral(x, degree):
     obj_integ = SimpleIntegral(x)
     if degree == '1':
         echo(obj_integ.get_first_integral())
