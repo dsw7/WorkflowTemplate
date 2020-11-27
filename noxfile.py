@@ -11,7 +11,7 @@ nox.options.report = path.join(nox.options.envdir, 'noxreport')
 @nox.session(python=PYTHON_INTERP_VERSION)
 def lint(session):
     command = 'pylint {} {} --output-format=colorized --exit-zero --rcfile {}'.format(
-        PATH_TO_PROJECT, path.join(PATH_TO_PROJECT, 'utils'), path.join(PATH_TO_PROJECT, 'configs/pylint.rc')
+        PATH_TO_PROJECT, path.join(PATH_TO_PROJECT, 'src'), path.join(PATH_TO_PROJECT, 'configs/pylint.rc')
     )
     msg_template = ['--msg-template', '{msg_id}{line:4d}{column:3d} {obj} {msg}']
     session.install('-r', path.join(PATH_TO_PROJECT, 'requirements.txt'))
@@ -31,7 +31,7 @@ def run_pytests_derivative_tests(session):
 
 @nox.session(python=PYTHON_INTERP_VERSION)
 def run_pytests_command_line_tests(session):
-    command = 'pytest -vs {} -c {} -m test_command_line_interfaces'.format(PATH_TO_PROJECT, path.join(PATH_TO_PROJECT, 'configs/pytest.ini'))
+    command = 'pytest -vs {} -c {} -m test_command_line_interface'.format(PATH_TO_PROJECT, path.join(PATH_TO_PROJECT, 'configs/pytest.ini'))
     session.install('-r', path.join(PATH_TO_PROJECT, 'requirements.txt'))
     session.run(*command.split(), external=True)
 
