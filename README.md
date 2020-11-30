@@ -59,10 +59,10 @@ pipreqs /path/to/project --force
 ```
 
 ## Static code analysis
-I use [pylint](https://www.pylint.org/) to catch obvious issues with my code. I like fine grained control over my linters using a `pylint.rc` file which I keep under `configs`. 
+I use [pylint](https://www.pylint.org/) to catch obvious issues with my code. I like fine grained control over my linters. To allow for small tweaks, I use a `pylint.rc` file which I keep under the `configs` directory.
 
 ## Testing
-I use [pytest](https://docs.pytest.org/en/stable/) for all testing. I like to separate my tests into logical groups using markers. I like fine grained control over my tests using a `pytest.ini` file which I keep under `configs`.
+I use [pytest](https://docs.pytest.org/en/stable/) for all testing. I like to separate my tests into logical groups using markers. I like fine grained control over my tests. To make small tweaks, I use a `pytest.ini` file which I keep under the `configs` directory. 
 
 ## Complexity and maintainability analysis
 I use [radon](https://radon.readthedocs.io/en/latest/index.html) for evaluating the complexity and maintainability of my programs. I'm particularly interested in evaluating the [maintainability index](https://en.wikipedia.org/wiki/Maintainability) and [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) of my programs because I feel these metrics help enforce better, cleaner code.
