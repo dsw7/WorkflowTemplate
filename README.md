@@ -35,7 +35,7 @@ Where _g_ is the fifth antiderivative of _f_:
 
 For example the command:
 ```
-$ src/foobar.py compute-derivatives 1 --degree 3
+$ src/foobar.py compute-derivative 1 --degree 3
 0.16666666666666666
 ```
 Computes the third derivative of _g_ at _x_ = 1:
