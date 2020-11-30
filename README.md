@@ -21,7 +21,7 @@ Computes the third antiderivative at _x_ = 1:
   <img src="https://latex.codecogs.com/svg.latex?f^{(-3)}(1)=\frac{1}{24}1^4=\frac{1}{24}">
 </p>
 
-The program also computes:
+The program also computes the derivative:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?g^n(x);\&space;\forall&space;n\in&space;\{1,...,5\}">
 </p>
