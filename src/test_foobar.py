@@ -1,7 +1,7 @@
 from math import factorial
 from pytest import mark
 from click.testing import CliRunner
-from compute import (
+from foobar import (
     compute_derivative,
     compute_integral
 )
