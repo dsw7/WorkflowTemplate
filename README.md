@@ -26,8 +26,11 @@ I use [click](https://click.palletsprojects.com/en/7.x/) for creating all my com
 ## Workflow automation
 I use [nox](https://nox.thea.codes/en/stable/) for automating my workflows. My workflows usually consist of extensive testing in addition to code complexity analysis.
 
+## Static code analysis
+I use [pylint](https://www.pylint.org/) to catch obvious issues with my code. I like fine grained control over my linters using a `pylint.rc` file which I keep under `configs`. 
+
 ## Testing
-I use [pytest](https://docs.pytest.org/en/stable/) for all testing. I like to separate my tests into logical groups using markers.
+I use [pytest](https://docs.pytest.org/en/stable/) for all testing. I like to separate my tests into logical groups using markers. I like fine grained control over my tests using a `pytest.ini` file which I keep under `configs`.
 
 ## Complexity and maintainability analysis
 I use [radon](https://radon.readthedocs.io/en/latest/index.html) for evaluating the complexity and maintainability of my programs. I'm particularly interested in evaluating the [maintainability index](https://en.wikipedia.org/wiki/Maintainability) and [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) of my programs because I feel these metrics help enforce better, cleaner code.
