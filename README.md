@@ -43,6 +43,9 @@ Computes the third derivative of _g_ at _x_ = 1:
   <img src="https://latex.codecogs.com/svg.latex?g^3(1)=\frac{1}{6}(1)^3=\frac{1}{6}">
 </p>
 
+## What a useless program?
+I said dummy program. I didn't say useful program. All though I suppose a pair of `compute-integral` invocations could be used to compute the definite integral of _f_.
+
 ## The command line interface
 I use [click](https://click.palletsprojects.com/en/7.x/) for creating all my command line programs. I could explain why I prefer `click` over some other related libraries, but `click` does a pretty good job marketing itself: [Why Click?](https://click.palletsprojects.com/en/7.x/why/#why-not-argparse)
 
