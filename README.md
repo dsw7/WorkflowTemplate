@@ -3,7 +3,7 @@ The majority of my programming experience has revolved around designing command 
 In this repository, I provide a template approximating my day-to-day workflow, including which frameworks I commonly use.
 
 ## The dummy program
-In this template, I have provided a basic command line program, `foobar`, which computes:
+In this template, I have provided a basic command line program, `foobar`, which computes the antiderivative:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?f^{(-n)}(x);\&space;\forall&space;n\in&space;\{1,...,5\}">
 </p>
@@ -11,6 +11,16 @@ For the primary starting linear equation:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?f(x)=x">
 </p>
+
+For example the command:
+```
+$ src/foobar.py compute-integral 1 --degree 3
+```
+Computes the third antiderivative at _x_ = 1:
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?f^{(-3)}(1)=\frac{1}{24}1^4=\frac{1}{24}">
+</p>
+
 The program also computes:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?g^n(x);\&space;\forall&space;n\in&space;\{1,...,5\}">
