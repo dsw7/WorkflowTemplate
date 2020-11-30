@@ -20,7 +20,7 @@ The secondary equation is the fifth antiderivative of the first linear equation:
   <img src="https://latex.codecogs.com/svg.latex?g(x)=f^{(-5)}(x)=\frac{1}{720}x^6">
 </p>
 
-## The command line interface  
+## The command line interface
 I use [click](https://click.palletsprojects.com/en/7.x/) for creating all my command line programs.
 
 ## Workflow automation
