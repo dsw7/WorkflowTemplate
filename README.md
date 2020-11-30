@@ -21,7 +21,7 @@ The secondary equation is the fifth antiderivative of the first linear equation:
 </p>
 
 ## The command line interface
-I use [click](https://click.palletsprojects.com/en/7.x/) for creating all my command line programs.
+I use [click](https://click.palletsprojects.com/en/7.x/) for creating all my command line programs. I could explain why I prefer `click` over some other related libraries, but `click` does a pretty good job marketing itself: [Why Click?](https://click.palletsprojects.com/en/7.x/why/#why-not-argparse)
 
 ## Workflow automation
 I use [nox](https://nox.thea.codes/en/stable/) for automating my workflows. My workflows almost always consist of extensive testing, code complexity analysis and static code analysis. Some projects also include `nox` sessions for automating compilation, such as complex cases involving C++ code that is tested using a Python testing framework.  
