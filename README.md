@@ -24,7 +24,7 @@ The secondary equation is the fifth antiderivative of the first linear equation:
 I use [click](https://click.palletsprojects.com/en/7.x/) for creating all my command line programs.
 
 ## Workflow automation
-I use [nox](https://nox.thea.codes/en/stable/) for automating my workflows. My workflows usually consist of extensive testing in addition to code complexity analysis.
+I use [nox](https://nox.thea.codes/en/stable/) for automating my workflows. My workflows almost always consist of extensive testing, code complexity analysis and static code analysis. Some projects also include `nox` sessions for automating compilation, such as complex cases involving C++ code that is tested using a Python testing framework.  
 
 ## Static code analysis
 I use [pylint](https://www.pylint.org/) to catch obvious issues with my code. I like fine grained control over my linters using a `pylint.rc` file which I keep under `configs`. 
