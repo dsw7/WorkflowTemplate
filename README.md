@@ -7,7 +7,8 @@ In this template, I have provided a basic command line program, `foobar`, which 
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?f^{(-n)}(x);\&space;\forall&space;n\in&space;\{1,...,5\}">
 </p>
-For the primary starting linear equation:
+
+For the simple function _f_:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?f(x)=x">
 </p>
@@ -16,16 +17,16 @@ For example the command:
 ```
 $ src/foobar.py compute-integral 1 --degree 3
 ```
-Computes the third antiderivative at _x_ = 1:
+Computes the third antiderivative of _f_ at _x_ = 1:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?f^{(-3)}(1)=\frac{1}{24}1^4=\frac{1}{24}">
 </p>
 
-The program also computes the derivative:
+The program also computes the derivative of a function _g_:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?g^n(x);\&space;\forall&space;n\in&space;\{1,...,5\}">
 </p>
-The secondary equation is the fifth antiderivative of the first linear equation:
+Where _g_ is the fifth antiderivative of _f_:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?g(x)=f^{(-5)}(x)=\frac{1}{720}x^6">
 </p>
