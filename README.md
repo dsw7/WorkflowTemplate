@@ -30,4 +30,4 @@ I use [nox](https://nox.thea.codes/en/stable/) for automating my workflows. My w
 I use [pytest](https://docs.pytest.org/en/stable/) for all testing. I like to separate my tests into logical groups using markers.
 
 ### Complexity and maintainability analysis
-I use [radon](https://radon.readthedocs.io/en/latest/index.html) for evaluating the complexity and maintainability of my programs.
+I use [radon](https://radon.readthedocs.io/en/latest/index.html) for evaluating the complexity and maintainability of my programs. I'm particularly interested in evaluating the [maintainability index](https://en.wikipedia.org/wiki/Maintainability) and [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) of my programs because I feel these metrics help enforce better, cleaner code.
