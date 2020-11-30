@@ -1,6 +1,6 @@
 # WorkflowTemplate
 The majority of my programming experience has revolved around designing command line programs.
-In this repository, I provide a template approximating my day-to-day workflow, including which frameworks I commonly use.
+In this repository, I provide a template approximating my day-to-day workflow, including which frameworks I commonly use. Here you will find examples of how I implement test and build automation, how and where I put my tests, how I set my tests up, how I lint my code, among others. 
 
 ## The dummy program
 In this template, I have provided a basic command line program, `foobar`, which computes the antiderivative:
