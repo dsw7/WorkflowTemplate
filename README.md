@@ -16,6 +16,7 @@ For the simple function _f_:
 For example the command:
 ```
 $ src/foobar.py compute-integral 1 --degree 3
+0.041666666666666664
 ```
 Computes the third antiderivative of _f_ at _x_ = 1:
 <p align="center">
@@ -26,9 +27,20 @@ The program also computes the derivative of a function _g_:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?g^n(x);\&space;\forall&space;n\in&space;\{1,...,5\}">
 </p>
+
 Where _g_ is the fifth antiderivative of _f_:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?g(x)=f^{(-5)}(x)=\frac{1}{720}x^6">
+</p>
+
+For example the command:
+```
+$ src/foobar.py compute-derivatives 1 --degree 3
+0.16666666666666666
+```
+Computes the third derivative of _g_ at _x_ = 1:
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?g^3(1)=\frac{1}{6}(1)^3=\frac{1}{6}">
 </p>
 
 ## The command line interface
