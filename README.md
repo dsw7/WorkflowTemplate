@@ -1,7 +1,8 @@
 # WorkflowTemplate
 The majority of my programming experience has revolved around designing command line programs.
 In this repository, I provide a template approximating my day-to-day workflow, including which frameworks I commonly use.
-## The dummy program
+
+### The dummy program
 In this template, I have provided a basic command line program, `foobar`, which computes:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?f^{(-n)}(x);\&space;\forall&space;n\in&space;\{1,...,5\}">
@@ -18,3 +19,15 @@ The secondary equation is the fifth antiderivative of the first linear equation:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?g(x)=f^{(-5)}(x)=\frac{1}{720}x^6">
 </p>
+
+### The command line interface  
+I use [click](https://click.palletsprojects.com/en/7.x/) for creating all my command line programs.
+
+### Workflow automation
+I use [nox](https://nox.thea.codes/en/stable/) for automating my workflows. My workflows usually consist of extensive testing in addition to code complexity analysis.
+
+### Testing
+I use [pytest](https://docs.pytest.org/en/stable/) for all testing. I like to separate my tests into logical groups using markers.
+
+### Complexity and maintainability analysis
+I use [radon](https://radon.readthedocs.io/en/latest/index.html) for evaluating the complexity and maintainability of my programs.
