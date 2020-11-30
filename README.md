@@ -14,7 +14,7 @@ The program also computes:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?g^n(x);\&space;\forall&space;n\in&space;\{1,...,5\}">
 </p>
-Where the secondary equation here is the fifth antiderivative of the first linear equation:
+The secondary equation is the fifth antiderivative of the first linear equation:
 <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?g(x)=f^{(-5)}(x)=\frac{1}{720}x^6">
 </p>
