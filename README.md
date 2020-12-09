@@ -66,3 +66,6 @@ I use [pytest](https://docs.pytest.org/en/stable/) for all testing. I like to se
 
 ## Complexity and maintainability analysis
 I use [radon](https://radon.readthedocs.io/en/latest/index.html) for evaluating the complexity and maintainability of my programs. I'm particularly interested in evaluating the [maintainability index](https://en.wikipedia.org/wiki/Maintainability) and [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) of my programs because I feel these metrics help enforce better, cleaner code.
+
+## Environment variable management
+I think environment variables can be very useful in certain cases. For example, referencing a project's "home" directory from somewhere deep within a very nested project. I use [dotenv](https://www.npmjs.com/package/dotenv) for managing environment variables and I like to place the `.env` file in the project's home directory. In this template, I define the path to the project home and the project's configuration file directories as a set of environment variables in the `.env` file. I reference the environment variables in `noxfile.py`.
