@@ -2,6 +2,15 @@
 ## Table of Contents
  - [Introduction](#introduction)  
  - [The dummy program](#the-dummy-program)  
+ - [What a useless program?](#what-a-useless-program)  
+ - [The command line interface](#the-command-line-interface)  
+ - [Workflow automation](#workflow-automation)  
+ - [Getting the program requirements](#getting-the-prgram-requirements)  
+ - [Static code analysis](#static-code-analysis)  
+ - [Testing](#testing)  
+ - [Complexity and maintainability analysis](#complexity-and-maintainability-analysis)  
+ - [Environment variable management](#environment-variable-management)  
+
 ## Introduction
 The majority of my programming experience has revolved around designing command line programs.
 In this repository, I provide a template approximating my day-to-day workflow, including which frameworks I commonly use. Here you will find examples of how I implement test and build automation, how and where I put my tests, how I set my tests up, how I lint my code, among others. 
